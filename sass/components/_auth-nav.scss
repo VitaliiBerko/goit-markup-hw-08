@@ -1,0 +1,17 @@
+// auth-nav
+
+.auth-nav {
+    display: flex;
+    gap: 50px;
+
+&__icon {
+        fill: currentColor;
+        margin-right: 10px;
+
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+        }
+    }
+}
+

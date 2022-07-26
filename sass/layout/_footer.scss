@@ -1,0 +1,28 @@
+/* Fotter */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--secondary-bg-color);
+
+&__inner {
+        display: flex;
+        align-items: baseline;
+    }
+
+&__social {
+    margin-left: 70px;
+}
+
+&__cta {
+    margin-left: 93px;
+
+}
+
+&-logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+}

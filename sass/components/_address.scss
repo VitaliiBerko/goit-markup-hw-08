@@ -1,0 +1,26 @@
+.address {
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: var(--main-bg-color);
+    }
+
+    &__mail-tel {
+        color: var(--link-auth-nav-footer);
+
+        transition: color var(--duration) var(--timing-function);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+
+    }
+
+
+
+}

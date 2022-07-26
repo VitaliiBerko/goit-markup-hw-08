@@ -1,0 +1,22 @@
+/* Variables Main colors */
+:root {
+    --main-bg-color: #ffffff;
+    --hero-bg-color-gradient: rgba(47, 48, 58, 0.4);
+    --secondary-bg-color: #2f303a;
+    --button-bg-color: #f5f4fa;
+    --team-bg-color: #f5f4fa;
+    --backdrop-bg: rgba(0, 0, 0, 0.2);
+
+    --title-text-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196f3;
+    --accent-button: #188ce8;
+    --link-auth-nav-footer: rgba(255, 255, 255, 0.6);
+    --border-header-color: #ececec;
+    --border-color: #eeeeee;
+    --icon-color: #afb1b8;
+    --icon-bg-footer: rgba(255, 255, 255, 0.1);
+
+    --duration: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

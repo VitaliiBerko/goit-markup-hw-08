@@ -1,0 +1,17 @@
+// site-nav
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    
+
+
+    &__list {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+}
+
+

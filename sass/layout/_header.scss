@@ -1,0 +1,15 @@
+/* Header */
+
+
+.header {
+    display: flex;
+    align-items: center;
+
+    &__site-nav {
+        margin-right: auto;
+    } 
+}
+
+.page-header {
+    border-bottom: 1px solid var(--border-header-color);
+}
