@@ -1,5 +1,9 @@
 /* what we are doing */
 .works {
+    @media (max-width: 1600px) {
+        display: none;
+        
+    }
     padding-top: 0;
 
     &__list-images {

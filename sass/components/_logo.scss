@@ -1,6 +1,6 @@
 /* logo */
 .logo {
-    margin-right: 93px;
+
 
     font-family: "Raleway";
     font-size: 26px;
@@ -13,12 +13,19 @@
         }
     
     &--light {
-            font-family: "Raleway";
-            font-size: 26px;
-            line-height: 1.19px;
+                   
+        font-family: "Raleway";
+        font-size: 26px;
+        line-height: 1.19px;
     
-            color: var(--main-bg-color);
+        color: var(--main-bg-color);
+            
         }
 
+    
+   
+    @media (min-width: 1600px) {
+        margin-right: 93px;
+    }
 
 }

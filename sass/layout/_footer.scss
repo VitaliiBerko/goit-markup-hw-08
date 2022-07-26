@@ -5,24 +5,44 @@
     padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
 
-&__inner {
+    &__inner {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) 
+    {
         display: flex;
         align-items: baseline;
+        flex-direction: row;
+        justify-content: left;
+        }
     }
 
 &__social {
+    margin-bottom: 60px;
+    @media (min-width: 1600px) {
     margin-left: 70px;
+    margin-bottom: 0;}
 }
 
 &__cta {
-    margin-left: 93px;
+    @media (min-width: 1600px) {
+    margin-left: 93px;}
 
 }
 
-&-logo {
+&__logo {
     display: block;
     margin-bottom: 20px;
     margin-right: 0;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: 1600px) {
+        text-align: left;
+    }
 }
 
 }

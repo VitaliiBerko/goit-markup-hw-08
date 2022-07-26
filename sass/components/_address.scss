@@ -1,4 +1,13 @@
 .address {
+    
+
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (min-width: 1600px) {
+            text-align: left;
+            margin-bottom: 0;
+        }
 
     &__item:not(:last-child) {
         margin-bottom: 9px;
@@ -20,7 +29,6 @@
 
 
     }
-
 
 
 }

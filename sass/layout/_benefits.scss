@@ -1,7 +1,11 @@
 /* Benefits */
 .benefits {
-    display: flex;
+        
+    
+        @media (min-width: 768px) {
+                display: flex;
 
+        }
     
     &__icon-thumb {
             @extend %flex-centered;
@@ -12,10 +16,22 @@
         }
     
     &__item {
+        @media (max-width: 768px) {
+                max-width: 450px;
+
+                &:not(:last-child) {
+                margin-bottom: 30px;
+                }
+
+        }
+
+        @media (min-width: 1600px) {
             width: 270px;
 
             &:not(:last-child) {
                     margin-right: 30px;
                 }
+        } 
+        
         }
 }
