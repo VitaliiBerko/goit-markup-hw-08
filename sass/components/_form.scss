@@ -1,7 +1,13 @@
 /* Form */
 
 .form-modal {
-    width: 448px;
+    max-width: 350px;
+    width: 100%;
+
+    @media (min-width: 1600px) {
+        max-width: 448px;
+        width: 100%;
+    }
 
     &__title {
             font-size: 20px;
@@ -117,16 +123,38 @@
         }
     
     &__input+&__label {
-            margin-left: 9px;
+            
+             
+                font-size: 12px;
+                line-height: 1.17;
+                margin-left: 8px;
+            
+
+            @media (min-width: 1600px) {
+                margin-left: 9px;
+                font-size: 14px;
+                line-height: 1.71;
+
+            }
         }
 
 }
 
 
 .condition {
-    line-height: 1.71;
+    
     color: var(--accent-color);
     border-bottom: 0.5px solid var(--accent-color);
+    
+    font-size: 12px;
+    line-height: 1.17;
+    
+
+    @media (min-width: 1600px) {
+        font-size: 14px;
+        line-height: 1.71;
+
+    }
 }
 
 

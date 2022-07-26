@@ -1,5 +1,7 @@
 /* Form call to action */
 .form-cta {
+    width: 450px;
+    width: 100%;
 
     @media (min-width: 1600px) {
     display: flex;
@@ -8,9 +10,10 @@
 
 
     &__inner {
-            max-width: 450px;
+            width: 100%;
             
             @media (min-width: 1600px) {
+
                     max-width: 358px;
                 }
 
@@ -19,6 +22,7 @@
     
     &__label {
             display: block;
+            width: 100%;
             margin-bottom: 20px;
     
             font-weight: 700;

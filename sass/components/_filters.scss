@@ -1,13 +1,28 @@
 // filters
 
 .filters {
+    
 
     &__list {
             display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            margin-right: -8px;
+            
+
+            
+            @media (min-width: 768px) {
+                justify-content: center;
+                margin-bottom: 50px;
+                gap: 8px;
+
+            }
         }
+    &__item {
+        margin-bottom: 15px;
+        margin-right: 8px;
+    }
+    
     
     &__element {
             border: none;

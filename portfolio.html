@@ -27,13 +27,15 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container header">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo"
+        <nav class="site-nav header__site-nav">
+          <a href="./index.html" class="logo header__logo"
             >Web<span class="logo logo--dark">Studio</span>
           </a>
 
           <ul class="site-nav__list">
-            <li><a class="link" href="./index.html">Студия</a></li>
+            <li>
+              <a class="link" href="./index.html">Студия</a>
+            </li>
             <li>
               <a class="link link--current" href="./portfolio.html"
                 >Портфолио</a
@@ -74,7 +76,7 @@
 
           <div class="filters">
             <ul class="filters__list">
-              <li>
+              <li class="filters__item">
                 <button
                   type="button"
                   class="filters__element filters__element--active"
@@ -82,20 +84,20 @@
                   Все
                 </button>
               </li>
-              <li>
+              <li class="filters__item">
                 <button type="button" class="filters__element">
                   Веб-сайты
                 </button>
               </li>
-              <li>
+              <li class="filters__item">
                 <button type="button" class="filters__element">
                   Приложения
                 </button>
-              </li>
-              <li>
+              </li class="filters__item">
+              <li class="filters__item">
                 <button type="button" class="filters__element">Дизайн</button>
               </li>
-              <li>
+              <li class="filters__item">
                 <button type="button" class="filters__element">
                   Маркетинг
                 </button>
@@ -360,7 +362,7 @@
     <footer class="footer">
       <div class="footer__inner container">
         <div>
-          <a href="./index.html" class="logo footer-logo"
+          <a href="./index.html" class="logo footer__logo"
             >Web<span class="logo logo--light">Studio</span></a
           >
           <address>
@@ -388,7 +390,7 @@
           </address>
         </div>
 
-        <div class="social social--right">
+        <div class="social footer__social">
           <h2 class="title title--social-light">присоединяйтесь</h2>
 
           <ul class="social__list">

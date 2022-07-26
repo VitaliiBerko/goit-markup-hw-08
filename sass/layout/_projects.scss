@@ -5,6 +5,16 @@
             display: flex;
             flex-wrap: wrap;
         }
+
+        &__item {
+            max-width: 450px;
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (min-width: 1600px) {
     
         &__item:not(:nth-child(3n)) {
             margin-right: 30px;
@@ -16,6 +26,7 @@
     
         &__item {
             flex-basis: calc((100% - 60px) / 3);
+        }
         }
     
         &__link {
