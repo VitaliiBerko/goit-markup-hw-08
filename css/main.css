@@ -161,6 +161,10 @@ body {
   }
 }
 
+.mobile__menu-button {
+  border: none;
+}
+
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
