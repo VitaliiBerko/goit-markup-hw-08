@@ -1,12 +1,14 @@
 .mobile {
-    
+    max-width: 767px;
+    width: 100%;
     @media (min-width: 768px) {
         display: none;
-    }
+        }
     &__menu-button {
         
         @extend %flex-centered;
         position: absolute;
+        z-index: 10;
         right: 15px;
         top: 10px;
         
@@ -21,11 +23,79 @@
 
         &:hover, &:focus {
             fill: var(--accent-color);
+        }            
         }
-    
-    }
+
 
         &__icon {
-            position: absolute;            
+            // position: absolute;            
         }
+
+        &__icon-menu {
+        .mobile__menu-button.is-open & {
+            display: block;
+        }
+
+        .mobile__menu-button & {
+            display: none;
+        }
+        }
+
+       &__icon-close {        
+
+        .mobile__menu-button & {
+            display: block;
+        }
+
+        .mobile__menu-button.is-open  & {
+            display: none;
+        }
+
+       }
+    &__menu-conteiner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 767px;
+        width: 100%;
+        
+
+        background-color: var(--main-bg-color);
+
+        &.is-open {
+            display: none;
+        }
+
+    }   
+
+    &__site-nav-list {
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+    }
+    &__link--current {
+        color: var(--accent-color);
+    }
+
+    &__link {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+
+            padding: 0;
+            
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+
+        
+            }
+
+    &__auth-nav-list {
+        @media (min-width: 768px) {
+                display: none;
+            }
+    }
 }

@@ -50,17 +50,52 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
-            <div class="mobile">
-                <button type="button" class="mobile__menu-button">
-                <svg class="mobile__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-mobile-menu"></use>
-                </svg>
-                <svg class="mobile__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-mobile-close"></use>
-                </svg>
+
+            <nav class="mobile">
                 
-            </button>
-            </div>
+                    <button type="button"
+                     class="mobile__menu-button is-open" 
+                     data-menu-button 
+                     aria-expanded="false"
+                     aria-controls="mobile__menu-conteiner">
+                        <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="mobile__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+                            <use class="mobile__icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+                        </svg>                
+                    </button>
+                    
+                    <div class="mobile__menu-conteiner is-open" data-menu id="mobile__menu-conteiner">
+                    <ul class="mobile__site-nav-list">
+                        <li><a class="link mobile__link mobile__link--current" href="./index.html">Студия</a></li>
+                        <li><a class="link mobile__link" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="link mobile__link" href="">Контакты</a></li>
+                    </ul>
+                    
+                    
+
+           
+
+                    <ul class="mobile__auth-nav-list">
+                        <li class="auth-nav__item">
+                            <a href="mailto:info@devstudio.com" class="link link--grey">
+                                info@devstudio.com</a>
+                        </li>
+                    
+                        <li class="auth-nav__item"><a href="tel:+380961111111" class="link link--grey">
+                                
+                                +38 096 111 11 11</a></li>
+                    </ul>
+
+                    
+                    <ul>
+                        <li><a href=""></a>Instagram</li>
+                        <li><a href=""></a>Twitter</li>
+                        <li><a href=""></a>Facebook</li>
+                        <li><a href=""></a>LinkedIn</li>
+                    </ul>
+                </div>
+            </nav>
+            
             
         
         </div>
@@ -561,5 +596,6 @@
     </div>
         
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
