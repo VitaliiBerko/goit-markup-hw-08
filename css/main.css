@@ -183,7 +183,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 50px;
-    margin: auto;
+    margin-left: 88px;
   }
 }
 
@@ -199,6 +199,16 @@ body {
   color: var(--title-text-color);
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .link--top {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+  .link--bottom {
+    padding-top: 5px;
+    padding-bottom: 21px;
+  }
 }
 .link--current {
   color: var(--accent-color);
@@ -222,6 +232,14 @@ body {
           align-items: center;
   color: var(--text-color);
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .link--grey {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 .link:focus, .link:hover {
   color: var(--accent-color);
 }
@@ -229,6 +247,21 @@ body {
 @media (max-width: 767px) {
   .auth-nav {
     display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+  .auth-nav__icon {
+    fill: currentColor;
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+  .auth-nav__icon--narrow {
+    width: 10px;
+    height: 14px;
+  }
+  .auth-nav__icon:hover, .auth-nav__icon:focus {
+    fill: var(--accent-color);
   }
 }
 @media (min-width: 1200px) {
@@ -1150,6 +1183,7 @@ body {
 .projects__image {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 .projects__overlay {
   position: absolute;

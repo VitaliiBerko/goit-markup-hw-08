@@ -2,6 +2,7 @@
 // link
 
 .link {
+
     display: block;
     position: relative;
 
@@ -16,6 +17,23 @@
     color: var(--title-text-color);
 
     transition: color var(--duration) var(--timing-function);
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        
+                  
+        &--top {
+                padding-top: 21px;
+                padding-bottom: 5px;
+            }
+        
+            &--bottom {
+                padding-top: 5px;
+                padding-bottom: 21px;
+            }
+
+    } 
+
+
 
     &--current {
         color: var(--accent-color);
@@ -40,7 +58,18 @@
         align-items: center;
 
         color: var(--text-color);
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            }
     }
+
+    
 
     &:focus,
     &:hover    
@@ -48,6 +77,6 @@
         color: var(--accent-color);
     }
 
-
+    
 
 }

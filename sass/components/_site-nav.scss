@@ -18,11 +18,12 @@
                         display: none;
                 
                     }
-                    @media (min-width:768px) {
+
+                @media (min-width:768px) {
                         display: flex;
                         align-items: center;
                         gap: 50px;
-                        margin: auto;
+                        margin-left: 88px;
                         
                     }
 

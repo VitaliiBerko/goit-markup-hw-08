@@ -8,9 +8,30 @@
     
         }
 
-        @media (min-width: 767px) {
+        @media (min-width: 767px) and (max-width: 1200px) {
 
+            &__icon {
+                    fill: currentColor;
+                    margin-right: 8px;
+                    width: 14px;
+                    height: 10px;
+
+                    &--narrow {
+                            width: 10px;
+                            height: 14px;
+                        }
+
+                
             
+                    &:hover,
+                    &:focus {
+                        fill: var(--accent-color);
+                    }
+
+                    
+                } 
+                
+                
         }
 
 
@@ -28,6 +49,8 @@
                     }
                 }          
             
-        }
+        
+}
+
 }
 
