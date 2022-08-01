@@ -1,9 +1,6 @@
-.mobile {
-        
-    max-width: 767px;
-    width: 100%;
-    max-height: 796px;
+.mobile {      
     
+           
 
     @media (min-width: 768px) {
         display: none;
@@ -31,10 +28,7 @@
         }
 
 
-        &__icon {
-            // position: absolute;            
-        }
-
+        
         &__icon-menu {
         .mobile__menu-button.is-open & {
             display: block;
@@ -45,7 +39,8 @@
         }
         }
 
-       &__icon-close {        
+       &__icon-close { 
+               
 
         .mobile__menu-button & {
             display: block;
@@ -57,14 +52,13 @@
 
        }
     &__menu-conteiner {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
-        max-width: 767px;
+        left: 0;        
         width: 100%;
         
-        padding: 48px 40px;
         
+        padding: 48px 40px;        
                 
 
         background-color: var(--main-bg-color);
@@ -90,9 +84,7 @@
 
         &:nth-child(1) {
             margin-bottom: 36px;
-        }
-
-        
+        }     
 
 
     }

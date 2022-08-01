@@ -280,11 +280,6 @@ body {
   }
 }
 
-.mobile {
-  max-width: 767px;
-  width: 100%;
-  max-height: 796px;
-}
 @media (min-width: 768px) {
   .mobile {
     display: none;
@@ -321,10 +316,9 @@ body {
   display: none;
 }
 .mobile__menu-conteiner {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  max-width: 767px;
   width: 100%;
   padding: 48px 40px;
   background-color: var(--main-bg-color);
