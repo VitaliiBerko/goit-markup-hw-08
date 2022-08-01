@@ -35,7 +35,7 @@
   overflow: hidden;
 }
 
-.customers__link, .works__description, .benefits__icon-thumb, .checkbox__form-field, .modal__close, .social__link, .button, .mobile__menu-button {
+.customers__link, .works__description, .benefits__icon-thumb, .checkbox__form-field, .modal__close, .social__link, .button, .mobile__menu-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +285,7 @@ body {
     display: none;
   }
 }
-.mobile__menu-button {
+.mobile__menu-toggle {
   position: absolute;
   z-index: 10;
   right: 15px;
@@ -300,31 +300,33 @@ body {
   -webkit-transition: fill var(--duration) var(--timing-function);
   transition: fill var(--duration) var(--timing-function);
 }
-.mobile__menu-button:hover, .mobile__menu-button:focus {
+@media (min-width: 768px) {
+  .mobile__menu-toggle {
+    display: none;
+  }
+}
+.mobile__menu-toggle:hover, .mobile__menu-toggle:focus {
   fill: var(--accent-color);
 }
-.mobile__menu-button.is-open .mobile__icon-menu {
-  display: block;
-}
-.mobile__menu-button .mobile__icon-menu {
-  display: none;
-}
-.mobile__menu-button .mobile__icon-close {
-  display: block;
-}
-.mobile__menu-button.is-open .mobile__icon-close {
-  display: none;
-}
-.mobile__menu-conteiner {
+.mobile__menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
+  transition: -webkit-transform var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function);
+  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  z-index: 10;
   background-color: var(--main-bg-color);
 }
-.mobile__menu-conteiner.is-open {
-  display: none;
+.mobile__menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .mobile__site-nav-list {
   margin-bottom: 302px;
