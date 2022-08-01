@@ -65,13 +65,16 @@
 
     color: var(--main-bg-color);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
 
     transition: transform var(--duration) var(--timing-function);
 
     .projects__link:hover &,
     .projects__link:focus & {
       transform: translateY(0);
+    }
+    @media (max-width: 767px) {
+      font-size: 15px;
     }
   }
 

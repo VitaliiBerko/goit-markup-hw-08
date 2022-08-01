@@ -72,15 +72,13 @@
                         <li class="mobile__item"><a class="link mobile__link" href="./portfolio.html">Портфолио</a></li>
                         <li class="mobile__item"><a class="link mobile__link" href="">Контакты</a></li>
                     </ul>
-                    </nav>                
-                    
-                    
-
+                    </nav>              
+                                       
            
 
                     <ul class="mobile__auth-nav-list">
                                            
-                        <li class="auth-nav__item mobile__auth-nav-item"><a href="tel:+380961111111" class="link link--grey                           mobile__auth-nav-link">  
+                        <li class="auth-nav__item mobile__auth-nav-item"><a href="tel:+380961111111" class="link mobile__auth-nav-link--blue                           mobile__auth-nav-link">  
                                 +38 096 111 11 11</a></li>
 
                         <li class="auth-nav__item mobile__auth-nav-item ">
@@ -224,9 +222,17 @@
             <div class="container">
                 <h2 class="title title--middle">Наша команда</h2>
                 <ul class="team__list-cards">
-                    <li class="team__card"><img  
-                          srcset="./images/teamCard1.jpg 1x, ./images/teamCard1@2x.jpg 2x"  
-                          src="./images/teamCard1.jpg" alt="Игорь Демьяненко Product Designer" width="450">
+                    <li class="team__card">
+                        <picture>
+                            <source srcset="./images/teamCard1.jpg 1x, ./images/teamCard1@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/teamCard1-1200.jpg 1x, ./images/teamCard1-1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/teamCard1-768.jpg 1x, ./images/teamCard1-768@2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                            
+                            <img src="./images/teamCard1.jpg"
+                            alt="Игорь Демьяненко Product Designer" width="450">
+                        </picture>
+                        
 
                     <div class="team__description">
                             <h3 class="team__name">Игорь Демьяненко</h3>
@@ -272,9 +278,16 @@
                         
                         
                     </li>
-                    <li class="team__card"><img
-                        srcset="./images/teamCard2.jpg 1x, ./images/teamCard2@2x.jpg 2x"
-                        src="./images/teamCard2.jpg" alt="Ольга Репина Frontend Developer" width="450">
+                    <li class="team__card">
+                        <picture>
+                            <source srcset="./images/teamCard2.jpg 1x, ./images/teamCard2@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/teamCard2-1200.jpg 1x, ./images/teamCard2-1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/teamCard2-768.jpg 1x, ./images/teamCard2-768@2x.jpg 2x" media="(min-width: 768px)"/>
+                            
+                            <img src="./images/teamCard2.jpg"
+                                alt="Ольга Репина Frontend Developer" width="450">
+                        </picture>
+                        
 
                     <div class="team__description">
                             <h3 class="team__name">Ольга Репина</h3>
@@ -316,9 +329,16 @@
                         
                         
                     </li>
-                    <li class="team__card"><img
-                        srcset="./images/teamCard3.jpg 1x, ./images/teamCard3@2x.jpg 2x"
-                        src="./images/teamCard3.jpg" alt="Николай Тарасов Marketing" width="450">
+                    <li class="team__card">
+                        <picture>
+                            <source srcset="./images/teamCard3.jpg 1x, ./images/teamCard3@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/teamCard3-1200.jpg 1x, ./images/teamCard3-1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/teamCard3-768.jpg 1x, ./images/teamCard3-768@2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                            <img src="./images/teamCard3.jpg"
+                                alt="Николай Тарасов Marketing" width="450">
+                        </picture>
+                        
 
                     <div class="team__description">
                             <h3 class="team__name">Николай Тарасов</h3>
@@ -360,9 +380,16 @@
                         
                     </li>
 
-                    <li class="team__card"><img 
-                        srcset="./images/teamCard4.jpg 1x, ./images/teamCard4@2x.jpg 2x"
-                        src="./images/teamCard4.jpg" alt="Михаил Ермаков UI Designer" width="450">
+                    <li class="team__card">
+                        <picture>
+                            <source srcset="./images/teamCard4.jpg 1x, ./images/teamCard4@2x.jpg 2x" media="(max-width: 767px)" />
+                            <source srcset="./images/teamCard4-1200.jpg 1x, ./images/teamCard4-1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/teamCard4-768.jpg 1x, ./images/teamCard4-768@2x.jpg 2x" media="(min-width: 768px)" />
+                            
+                            <img src="./images/teamCard4.jpg"
+                                alt="Михаил Ермаков UI Designer" width="450">
+                        </picture>
+                        
 
                         <div class="team__description">
                             <h3 class="team__name">Михаил Ермаков</h3>
@@ -470,7 +497,7 @@
         <div class="footer__inner container">
 
             <div class="footer__inner--short">
-                <div>
+                <div class="footer__wrap-address">
                 <a href="./index.html" class="logo footer__logo">Web<span class="logo logo--light">Studio</span></a>
                 <address>
                 

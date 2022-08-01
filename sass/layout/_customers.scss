@@ -12,6 +12,7 @@
         &__item {
             
                 width: calc((100% - 2 * 30px) / 2);
+                height: 92px;
                 margin: 15px;
 
             @media (min-width: 768px) {
@@ -20,7 +21,7 @@
                        
             @media (min-width: 1200px) {
             width: 170px;
-            height: 92px;}
+            }
         }
 
 

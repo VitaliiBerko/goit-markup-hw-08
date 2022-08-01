@@ -1,6 +1,11 @@
 .mobile {
+    
+    
     max-width: 767px;
     width: 100%;
+    max-height: 796px;
+    
+
     @media (min-width: 768px) {
         display: none;
         }
@@ -100,10 +105,10 @@
             line-height: 1.18;
             letter-spacing: 0.02em;
 
-            padding: 0;
-            
-            
+            padding: 0;  
 
+            
+            
             &--current {
                color: var(--accent-color);
         
@@ -126,7 +131,7 @@
     &__auth-nav-link {
             padding: 0;
             font-weight: 500;
-            font-size: 34px;
+            font-size: 27px;
             line-height: 1.18;
         
             letter-spacing: 0.02em;
@@ -134,6 +139,9 @@
             &--small {            
                     font-size: 24px;
                     }
+            &--blue {
+                color: var(--accent-color);
+            }
         
              }
 
