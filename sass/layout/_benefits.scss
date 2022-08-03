@@ -1,42 +1,37 @@
 /* Benefits */
 .benefits {
-        
-    
-        @media (min-width: 768px) {
-                display: flex;
-                flex-wrap: wrap;
-                margin: -15px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
-        }
-    
-    &__icon-thumb {
-            @extend %flex-centered;
-            height: 120px;
-    
-            background-color: var(--team-bg-color);
-            border-radius: 4px;
-        }
-    
-    &__item {       
-                max-width: 450px;
+  &__icon-thumb {
+    @extend %flex-centered;
+    height: 120px;
 
-                &:not(:last-child) {
-                margin-bottom: 30px;
-                }
-        
+    background-color: var(--team-bg-color);
+    border-radius: 4px;
+  }
 
-        @media (min-width: 768px) and (max-width: 1200px) {
-                flex-basis: calc((100% - 2 * 30px) / 2);
-                margin: 15px;
-        }        
+  &__item {
+    max-width: 450px;
 
-        @media (min-width: 1200px) {
-            width: 270px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
 
-            &:not(:last-child) {
-                    margin-right: 30px;
-                }
-        } 
-        
-        }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }

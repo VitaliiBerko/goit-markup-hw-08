@@ -1,34 +1,27 @@
 .address {
-    
+  text-align: center;
 
-    text-align: center;
-    
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 
-    @media (min-width: 1200px) {
-            text-align: left;
-            margin-bottom: 0;
-        }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 
-    &__item:not(:last-child) {
-        margin-bottom: 9px;
+  &__link {
+    color: var(--main-bg-color);
+  }
+
+  &__mail-tel {
+    color: var(--link-auth-nav-footer);
+
+    transition: color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
-
-    &__link {
-        color: var(--main-bg-color);
-    }
-
-    &__mail-tel {
-        color: var(--link-auth-nav-footer);
-
-        transition: color var(--duration) var(--timing-function);
-
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-
-
-    }
-
-
+  }
 }

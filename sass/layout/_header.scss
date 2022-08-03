@@ -1,26 +1,22 @@
 /* Header */
 
-
 .header {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 
-    &__site-nav {
-        margin-right: auto;}
+  &__site-nav {
+    margin-right: auto;
+  }
 
-        
-    &__logo {
-        @media (max-width: 768px) {
-            padding-top: 16px;
-            padding-bottom: 16px;
-
-        }
-
+  &__logo {
+    @media (max-width: 768px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
-    
+  }
 }
 
 .page-header {
-    border-bottom: 1px solid var(--border-header-color);
+  border-bottom: 1px solid var(--border-header-color);
 }

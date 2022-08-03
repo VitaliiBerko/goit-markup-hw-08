@@ -1,61 +1,52 @@
 // customers
 
 .customers {
-       &__list {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -15px;
-            justify-content: center;
-            
-        }
-    
-        &__item {
-            
-                width: calc((100% - 2 * 30px) / 2);
-                height: 92px;
-                margin: 15px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+  }
 
-            @media (min-width: 768px) {
-                width: 226px;
-            }
-                       
-            @media (min-width: 1200px) {
-            width: 170px;
-            }
-        }
+  &__item {
+    width: calc((100% - 2 * 30px) / 2);
+    height: 92px;
+    margin: 15px;
 
+    @media (min-width: 768px) {
+      width: 226px;
+    }
 
-    
-        &__item:not(:last-child) {
+    @media (min-width: 1200px) {
+      width: 170px;
+    }
+  }
 
-            @media (min-width: 1200px) {
-            margin-right: 0, 30px, 0, 0;}
-        }
-    
-        &__link {
-            @extend %flex-centered;
-    
-            width: 100%;
-            height: 100%;
-    
-            fill: var(--icon-color);
-    
-            border: 1px solid var(--icon-color);
-            border-radius: 4px;
-    
-            transition: fill var(--duration) var(--timing-function),
-                border var(--duration) var(--timing-function);
+  &__item:not(:last-child) {
+    @media (min-width: 1200px) {
+      margin-right: 0, 30px, 0, 0;
+    }
+  }
 
-            &:hover,
-            &:focus {
-                        fill: var(--accent-color);
-                        border: 1px solid var(--accent-color);
-                        border-radius: 4px;
-                    }
+  &__link {
+    @extend %flex-centered;
 
+    width: 100%;
+    height: 100%;
 
-        }
+    fill: var(--icon-color);
 
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+
+    transition: fill var(--duration) var(--timing-function),
+      border var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      border-radius: 4px;
+    }
+  }
 }
-
-

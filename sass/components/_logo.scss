@@ -1,31 +1,24 @@
 /* logo */
 .logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
 
+  color: var(--accent-color);
 
+  &--dark {
+    color: var(--title-text-color);
+  }
+
+  &--light {
     font-family: "Raleway";
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.19px;
 
-    color: var(--accent-color);
+    color: var(--main-bg-color);
+  }
 
-    &--dark {
-            color: var(--title-text-color);
-        }
-    
-    &--light {
-                   
-        font-family: "Raleway";
-        font-size: 26px;
-        line-height: 1.19px;
-    
-        color: var(--main-bg-color);
-            
-        }
-
-    
-   
-    @media (min-width: 1200px) {
-        margin-right: 93px;
-    }
-
+  @media (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

@@ -1,62 +1,56 @@
 // filters
 
 .filters {
-    
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(40px - 15px);
+    margin-right: -8px;
 
-    &__list {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: calc(40px - 15px);
-            margin-right: -8px;            
-
-            
-            @media (min-width: 768px) {
-                justify-content: center;
-                margin-bottom: calc(30px - 15px);               
-
-            }
-        }
-    &__item {
-        margin-bottom: 15px;
-        margin-right: 8px;
+    @media (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: calc(30px - 15px);
     }
-    
-    
-    &__element {
-            border: none;
-            padding: 6px 22px;
-    
-            background-color: var(--button-bg-color);
-            border-radius: 4px;
-    
-            font-family: "Roboto";
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.62;
-            letter-spacing: 0.03em;
-    
-            color: var(--title-text-color);
-            cursor: pointer;
-    
-            transition: color var(--duration) var(--timing-function),
-                background-color var(--duration) var(--timing-function),
-                box-shadow var(--duration) var(--timing-function);
+  }
+  &__item {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
 
-                &:hover,
-                &:focus {
-                        background-color: var(--accent-color);
-                        color: var(--main-bg-color);
-                
-                        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-                            0px 2px 2px rgba(0, 0, 0, 0.12);
-                    }
-                
-                &--active {
-                        background-color: var(--accent-color);
-                        color: var(--main-bg-color);
-                        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-                            0px 2px 2px rgba(0, 0, 0, 0.12);
-                    }
-        }
+  &__element {
+    border: none;
+    padding: 6px 22px;
 
+    background-color: var(--button-bg-color);
+    border-radius: 4px;
+
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    cursor: pointer;
+
+    transition: color var(--duration) var(--timing-function),
+      background-color var(--duration) var(--timing-function),
+      box-shadow var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--main-bg-color);
+
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &--active {
+      background-color: var(--accent-color);
+      color: var(--main-bg-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
 }
